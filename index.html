@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Grocery Planner</title>
+    <meta name="description" content="Plan groceries with AI — hosted on groceries.streamfuse.app">
+    <link rel="canonical" href="https://groceries.streamfuse.app/">
+
+    <meta property="og:title" content="AI Grocery Planner">
+    <meta property="og:description" content="Plan groceries with AI">
+    <meta property="og:url" content="https://groceries.streamfuse.app/">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI Grocery Planner">
+    <meta name="twitter:url" content="https://groceries.streamfuse.app/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #0f1419;
+            --surface: #1a222c;
+            --text: #e8eef4;
+            --muted: #8b9aaf;
+            --accent: #3ecf8e;
+            --accent-dim: #2a9d67;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: "Source Sans 3", system-ui, sans-serif;
+            background: radial-gradient(ellipse 120% 80% at 50% -20%, #1e3d32 0%, var(--bg) 55%);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        main {
+            max-width: 40rem;
+            margin: 0 auto;
+            padding: clamp(2rem, 8vw, 4rem) 1.5rem;
+        }
+        h1 {
+            font-family: Fraunces, Georgia, serif;
+            font-weight: 600;
+            font-size: clamp(1.85rem, 5vw, 2.35rem);
+            letter-spacing: -0.02em;
+            margin: 0 0 0.75rem;
+        }
+        p {
+            margin: 0 0 1rem;
+            color: var(--muted);
+            font-size: 1.05rem;
+        }
+        .badge {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--accent);
+            border: 1px solid var(--accent-dim);
+            padding: 0.25rem 0.6rem;
+            border-radius: 999px;
+            margin-bottom: 1.25rem;
+        }
+        .panel {
+            background: var(--surface);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin-top: 2rem;
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+        .panel p:last-child { margin-bottom: 0; }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        a:hover { text-decoration: underline; }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            font-size: 0.875rem;
+            color: var(--muted);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <span class="badge">Groceries</span>
+        <h1>AI Grocery Planner</h1>
+        <p>
+            This is the landing shell for the grocery planner. Build lists, meal ideas, and shopping flows here—separate from the core StreamFuse product, sharing only the <strong>groceries.streamfuse.app</strong> domain on Firebase Hosting.
+        </p>
+        <div class="panel">
+            <p><strong>Next steps:</strong> Add UI for lists and AI features; optionally connect to Firestore or your own API under this subdomain.</p>
+        </div>
+        <footer>
+            Source: <a href="https://github.com/NamelessNATM/AIGroceryPlanner">AIGroceryPlanner</a> · Domain piggybacks StreamFuse hosting only.
+        </footer>
+    </main>
+</body>
+</html>
