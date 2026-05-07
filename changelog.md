@@ -9,7 +9,10 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 ### Added
 
 - `WBS.md` — full work breakdown structure covering all 11 phases from project foundation through deployment and QA.
-- React (Vite) + Tailwind CSS frontend scaffold with Firebase connection
+- Vite + React + Tailwind scaffold in `ai_grocery_planner/` with Firebase SDK wired up
+  - Firebase config loaded from Vite env (`import.meta.env`) — no secrets committed in source
+  - `src/services/firebase.js` initialises Firebase app (and exports configured clients)
+  - Firebase Hosting config updated so groceries target serves `ai_grocery_planner/dist`
 - Country → city selector populated dynamically from community JSON datasets
 - Parameters panel — people count, meal frequency, weekly budget, dietary exclusions, language selection
 - Client-side minimum viable weekly cost calculator derived from city dataset prices
