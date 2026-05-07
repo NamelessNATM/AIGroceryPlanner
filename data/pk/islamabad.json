@@ -1,0 +1,1782 @@
+{
+    "meta": {
+      "country": "Pakistan",
+      "city": "Islamabad",
+      "currency": "PKR",
+      "currency_symbol": "₨",
+      "last_updated": "2026-05-07",
+      "contributor": "NamelessNATM"
+    },
+    "ingredients": [
+      {
+        "name": "Corn Flour",
+        "category": "grains",
+        "unit": "100g",
+        "price_per_unit": 58
+      },
+      {
+        "name": "Rice Flour",
+        "category": "grains",
+        "unit": "100g",
+        "price_per_unit": 64
+      },
+      {
+        "name": "Bread Crumbs",
+        "category": "grains",
+        "unit": "100g",
+        "price_per_unit": 153
+      },
+      {
+        "name": "Baking Powder",
+        "category": "baking",
+        "unit": "100g",
+        "price_per_unit": 150
+      },
+      {
+        "name": "Baking Soda",
+        "category": "baking",
+        "unit": "100g",
+        "price_per_unit": 104
+      },
+      {
+        "name": "Instant Yeast",
+        "category": "baking",
+        "unit": "10g",
+        "price_per_unit": 51
+      },
+      {
+        "name": "Cocoa Powder",
+        "category": "baking",
+        "unit": "100g",
+        "price_per_unit": 561
+      },
+      {
+        "name": "Coconut Milk Powder",
+        "category": "dairy",
+        "unit": "100g",
+        "price_per_unit": 477
+      },
+      {
+        "name": "Mustard Powder",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 161
+      },
+      {
+        "name": "Chicken Seasoning Powder",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 212
+      },
+      {
+        "name": "Vanilla Essence",
+        "category": "baking",
+        "unit": "10ml",
+        "price_per_unit": 41
+      },
+      {
+        "name": "Brown Desi Eggs",
+        "category": "dairy",
+        "unit": "dozen",
+        "price_per_unit": 900
+      },
+      {
+        "name": "White Table Eggs",
+        "category": "dairy",
+        "unit": "dozen",
+        "price_per_unit": 700
+      },
+      {
+        "name": "Full Cream Milk",
+        "category": "dairy",
+        "unit": "1L",
+        "price_per_unit": 365
+      },
+      {
+        "name": "Milk Powder",
+        "category": "dairy",
+        "unit": "100g",
+        "price_per_unit": 308
+      },
+      {
+        "name": "Plain Yogurt",
+        "category": "dairy",
+        "unit": "100g",
+        "price_per_unit": 52
+      },
+      {
+        "name": "Salted Butter",
+        "category": "dairy",
+        "unit": "100g",
+        "price_per_unit": 384
+      },
+      {
+        "name": "Unsalted Butter",
+        "category": "dairy",
+        "unit": "100g",
+        "price_per_unit": 470
+      },
+      {
+        "name": "Dairy Cream",
+        "category": "dairy",
+        "unit": "100ml",
+        "price_per_unit": 110
+      },
+      {
+        "name": "Cheddar Cheese",
+        "category": "dairy",
+        "unit": "100g",
+        "price_per_unit": 323
+      },
+      {
+        "name": "Mozzarella Cheese",
+        "category": "dairy",
+        "unit": "100g",
+        "price_per_unit": 360
+      },
+      {
+        "name": "Cottage Cheese",
+        "category": "dairy",
+        "unit": "100g",
+        "price_per_unit": 340
+      },
+      {
+        "name": "Plain Bread",
+        "category": "grains",
+        "unit": "loaf",
+        "price_per_unit": 180
+      },
+      {
+        "name": "Bran Bread",
+        "category": "grains",
+        "unit": "loaf",
+        "price_per_unit": 200
+      },
+      {
+        "name": "Barley",
+        "category": "grains",
+        "unit": "100g",
+        "price_per_unit": 182
+      },
+      {
+        "name": "Honey",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 190
+      },
+      {
+        "name": "Peanut Butter",
+        "category": "legumes",
+        "unit": "100g",
+        "price_per_unit": 237
+      },
+      {
+        "name": "Sesame Seeds",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 125
+      },
+      {
+        "name": "Raisins",
+        "category": "fruit",
+        "unit": "100g",
+        "price_per_unit": 299
+      },
+      {
+        "name": "Almonds",
+        "category": "nuts",
+        "unit": "100g",
+        "price_per_unit": 599
+      },
+      {
+        "name": "Cashew Nuts",
+        "category": "nuts",
+        "unit": "100g",
+        "price_per_unit": 650
+      },
+      {
+        "name": "Walnuts",
+        "category": "nuts",
+        "unit": "100g",
+        "price_per_unit": 240
+      },
+      {
+        "name": "Peanuts",
+        "category": "legumes",
+        "unit": "100g",
+        "price_per_unit": 68
+      },
+      {
+        "name": "Dates",
+        "category": "fruit",
+        "unit": "100g",
+        "price_per_unit": 160
+      },
+      {
+        "name": "Dried Apricots",
+        "category": "fruit",
+        "unit": "100g",
+        "price_per_unit": 350
+      },
+      {
+        "name": "Desiccated Coconut",
+        "category": "nuts",
+        "unit": "100g",
+        "price_per_unit": 170
+      },
+      {
+        "name": "Roasted Chickpeas",
+        "category": "legumes",
+        "unit": "100g",
+        "price_per_unit": 140
+      },
+      {
+        "name": "Desi Ghee",
+        "category": "oils",
+        "unit": "100g",
+        "price_per_unit": 350
+      },
+      {
+        "name": "Dairy Makhan",
+        "category": "dairy",
+        "unit": "100g",
+        "price_per_unit": 250
+      },
+      {
+        "name": "Wheat Flour (Atta)",
+        "category": "grains",
+        "unit": "100g",
+        "price_per_unit": 22
+      },
+      {
+        "name": "White Flour (Maida)",
+        "category": "grains",
+        "unit": "100g",
+        "price_per_unit": 36
+      },
+      {
+        "name": "Semolina (Suji)",
+        "category": "grains",
+        "unit": "100g",
+        "price_per_unit": 38
+      },
+      {
+        "name": "Gram Flour (Besan)",
+        "category": "grains",
+        "unit": "100g",
+        "price_per_unit": 70
+      },
+      {
+        "name": "Moong Dal",
+        "category": "legumes",
+        "unit": "100g",
+        "price_per_unit": 78
+      },
+      {
+        "name": "Green Moong Dal (Chilka)",
+        "category": "legumes",
+        "unit": "100g",
+        "price_per_unit": 52
+      },
+      {
+        "name": "Red Lentils (Masoor Dal)",
+        "category": "legumes",
+        "unit": "100g",
+        "price_per_unit": 44
+      },
+      {
+        "name": "Whole Masoor Lentils",
+        "category": "legumes",
+        "unit": "100g",
+        "price_per_unit": 34
+      },
+      {
+        "name": "Chana Dal",
+        "category": "legumes",
+        "unit": "100g",
+        "price_per_unit": 44
+      },
+      {
+        "name": "Whole Urad Dal (Mash Sabat)",
+        "category": "legumes",
+        "unit": "100g",
+        "price_per_unit": 54
+      },
+      {
+        "name": "Split Urad Dal (Daal Mash)",
+        "category": "legumes",
+        "unit": "100g",
+        "price_per_unit": 64
+      },
+      {
+        "name": "Red Kidney Beans (Lobia)",
+        "category": "legumes",
+        "unit": "100g",
+        "price_per_unit": 80
+      },
+      {
+        "name": "White Kidney Beans",
+        "category": "legumes",
+        "unit": "100g",
+        "price_per_unit": 50
+      },
+      {
+        "name": "Black Chickpeas",
+        "category": "legumes",
+        "unit": "100g",
+        "price_per_unit": 40
+      },
+      {
+        "name": "White Chickpeas",
+        "category": "legumes",
+        "unit": "100g",
+        "price_per_unit": 40
+      },
+      {
+        "name": "Cumin Seeds",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 100
+      },
+      {
+        "name": "Coriander Seeds",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 45
+      },
+      {
+        "name": "Fennel Seeds",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 140
+      },
+      {
+        "name": "Cinnamon Stick",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 95
+      },
+      {
+        "name": "Black Cardamom",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 550
+      },
+      {
+        "name": "Green Cardamom",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 720
+      },
+      {
+        "name": "Star Anise",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 165
+      },
+      {
+        "name": "Carom Seeds (Ajwain)",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 185
+      },
+      {
+        "name": "Nigella Seeds (Kalonji)",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 165
+      },
+      {
+        "name": "Bay Leaves",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 85
+      },
+      {
+        "name": "Whole Dried Red Chilies",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 155
+      },
+      {
+        "name": "Black Cumin Seeds (Kala Zeera)",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 225
+      },
+      {
+        "name": "Red Chilli Powder",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 115
+      },
+      {
+        "name": "Coriander Powder",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 90
+      },
+      {
+        "name": "Turmeric Powder",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 125
+      },
+      {
+        "name": "Garam Masala Powder",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 190
+      },
+      {
+        "name": "Black Pepper Powder",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 190
+      },
+      {
+        "name": "Ginger Powder",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 330
+      },
+      {
+        "name": "Dried Fenugreek Leaves (Kasuri Methi)",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 260
+      },
+      {
+        "name": "Table Salt",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 10
+      },
+      {
+        "name": "Biryani Masala",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 300
+      },
+      {
+        "name": "Karahi Masala",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 300
+      },
+      {
+        "name": "Chaat Masala",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 199
+      },
+      {
+        "name": "Whole Chicken",
+        "category": "meat",
+        "unit": "100g",
+        "price_per_unit": 115
+      },
+      {
+        "name": "Chicken Karahi Cut",
+        "category": "meat",
+        "unit": "100g",
+        "price_per_unit": 100
+      },
+      {
+        "name": "Chicken Boti Cut",
+        "category": "meat",
+        "unit": "100g",
+        "price_per_unit": 113
+      },
+      {
+        "name": "Chicken Drumsticks",
+        "category": "meat",
+        "unit": "100g",
+        "price_per_unit": 103
+      },
+      {
+        "name": "Chicken Wings",
+        "category": "meat",
+        "unit": "100g",
+        "price_per_unit": 100
+      },
+      {
+        "name": "Chicken Breast Fillet",
+        "category": "meat",
+        "unit": "100g",
+        "price_per_unit": 162
+      },
+      {
+        "name": "Boneless Chicken",
+        "category": "meat",
+        "unit": "100g",
+        "price_per_unit": 158
+      },
+      {
+        "name": "Chicken Mince (Qeema)",
+        "category": "meat",
+        "unit": "100g",
+        "price_per_unit": 160
+      },
+      {
+        "name": "Frozen Fries",
+        "category": "frozen",
+        "unit": "100g",
+        "price_per_unit": 113
+      },
+      {
+        "name": "Chicken Nuggets (Frozen)",
+        "category": "frozen",
+        "unit": "100g",
+        "price_per_unit": 130
+      },
+      {
+        "name": "Chicken Kofta (Frozen)",
+        "category": "frozen",
+        "unit": "100g",
+        "price_per_unit": 170
+      },
+      {
+        "name": "Chicken Shami Kabab (Frozen)",
+        "category": "frozen",
+        "unit": "100g",
+        "price_per_unit": 200
+      },
+      {
+        "name": "Chicken Seekh Kabab (Frozen)",
+        "category": "frozen",
+        "unit": "100g",
+        "price_per_unit": 225
+      },
+      {
+        "name": "Chicken Chapli Kabab (Frozen)",
+        "category": "frozen",
+        "unit": "100g",
+        "price_per_unit": 158
+      },
+      {
+        "name": "Chicken Sausages (Frozen)",
+        "category": "frozen",
+        "unit": "100g",
+        "price_per_unit": 330
+      },
+      {
+        "name": "Chicken Samosa (Frozen)",
+        "category": "frozen",
+        "unit": "100g",
+        "price_per_unit": 220
+      },
+      {
+        "name": "Vegetable Samosa (Frozen)",
+        "category": "frozen",
+        "unit": "100g",
+        "price_per_unit": 142
+      },
+      {
+        "name": "Chicken Burger Patties (Frozen)",
+        "category": "frozen",
+        "unit": "100g",
+        "price_per_unit": 145
+      },
+      {
+        "name": "Chicken Spring Rolls (Frozen)",
+        "category": "frozen",
+        "unit": "100g",
+        "price_per_unit": 383
+      },
+      {
+        "name": "Chicken Tikka (Marinated, Frozen)",
+        "category": "frozen",
+        "unit": "100g",
+        "price_per_unit": 200
+      },
+      {
+        "name": "Chicken Tender Strips (Frozen)",
+        "category": "frozen",
+        "unit": "100g",
+        "price_per_unit": 210
+      },
+      {
+        "name": "Chicken Bologna Slices",
+        "category": "frozen",
+        "unit": "100g",
+        "price_per_unit": 600
+      },
+      {
+        "name": "Frozen Plain Paratha",
+        "category": "grains",
+        "unit": "100g",
+        "price_per_unit": 65
+      },
+      {
+        "name": "Frozen Plain Naan",
+        "category": "grains",
+        "unit": "100g",
+        "price_per_unit": 70
+      },
+      {
+        "name": "Frozen Roghni Naan",
+        "category": "grains",
+        "unit": "100g",
+        "price_per_unit": 91
+      },
+      {
+        "name": "Brownie Mix",
+        "category": "baking",
+        "unit": "100g",
+        "price_per_unit": 113
+      },
+      {
+        "name": "Vanilla Cake Mix",
+        "category": "baking",
+        "unit": "100g",
+        "price_per_unit": 113
+      },
+      {
+        "name": "Chocolate Cake Mix",
+        "category": "baking",
+        "unit": "100g",
+        "price_per_unit": 107
+      },
+      {
+        "name": "Red Velvet Cake Mix",
+        "category": "baking",
+        "unit": "100g",
+        "price_per_unit": 102
+      },
+      {
+        "name": "Pancake Mix",
+        "category": "baking",
+        "unit": "100g",
+        "price_per_unit": 115
+      },
+      {
+        "name": "Mug Cake Mix",
+        "category": "baking",
+        "unit": "100g",
+        "price_per_unit": 120
+      },
+      {
+        "name": "Icing Sugar",
+        "category": "baking",
+        "unit": "100g",
+        "price_per_unit": 67
+      },
+      {
+        "name": "Caster Sugar",
+        "category": "baking",
+        "unit": "100g",
+        "price_per_unit": 69
+      },
+      {
+        "name": "Brown Sugar",
+        "category": "baking",
+        "unit": "100g",
+        "price_per_unit": 71
+      },
+      {
+        "name": "White Chocolate Chips",
+        "category": "baking",
+        "unit": "100g",
+        "price_per_unit": 191
+      },
+      {
+        "name": "Dark Chocolate Chips",
+        "category": "baking",
+        "unit": "100g",
+        "price_per_unit": 201
+      },
+      {
+        "name": "White Cooking Chocolate",
+        "category": "baking",
+        "unit": "100g",
+        "price_per_unit": 431
+      },
+      {
+        "name": "Food Colouring",
+        "category": "baking",
+        "unit": "10g",
+        "price_per_unit": 138
+      },
+      {
+        "name": "Custard Powder",
+        "category": "baking",
+        "unit": "100g",
+        "price_per_unit": 83
+      },
+      {
+        "name": "Gelatine (Unflavored)",
+        "category": "baking",
+        "unit": "50g",
+        "price_per_unit": 270
+      },
+      {
+        "name": "Psyllium Husk",
+        "category": "baking",
+        "unit": "100g",
+        "price_per_unit": 914
+      },
+      {
+        "name": "Self-Raising Flour",
+        "category": "grains",
+        "unit": "100g",
+        "price_per_unit": 52
+      },
+      {
+        "name": "Chocolate Syrup",
+        "category": "condiments",
+        "unit": "100ml",
+        "price_per_unit": 219
+      },
+      {
+        "name": "Caramel Syrup",
+        "category": "condiments",
+        "unit": "100ml",
+        "price_per_unit": 257
+      },
+      {
+        "name": "Chocolate Fudge Topping",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 157
+      },
+      {
+        "name": "Mango Jam",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 81
+      },
+      {
+        "name": "Strawberry Jam",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 127
+      },
+      {
+        "name": "Mixed Fruit Jam",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 80
+      },
+      {
+        "name": "Apple Jam",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 80
+      },
+      {
+        "name": "Orange Marmalade",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 83
+      },
+      {
+        "name": "Corn Flakes",
+        "category": "grains",
+        "unit": "100g",
+        "price_per_unit": 215
+      },
+      {
+        "name": "Bran Flakes",
+        "category": "grains",
+        "unit": "100g",
+        "price_per_unit": 325
+      },
+      {
+        "name": "Muesli",
+        "category": "grains",
+        "unit": "100g",
+        "price_per_unit": 430
+      },
+      {
+        "name": "White Pepper Powder",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 265
+      },
+      {
+        "name": "Red Chilli Flakes",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 115
+      },
+      {
+        "name": "Himalayan Pink Salt",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 14
+      },
+      {
+        "name": "Garlic Powder",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 290
+      },
+      {
+        "name": "Cumin Powder",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 640
+      },
+      {
+        "name": "Paprika Powder",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 506
+      },
+      {
+        "name": "Oregano Leaves",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 633
+      },
+      {
+        "name": "Steak Seasoning",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 525
+      },
+      {
+        "name": "Peri Peri Seasoning",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 463
+      },
+      {
+        "name": "Fajita Seasoning",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 472
+      },
+      {
+        "name": "Fries Seasoning",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 399
+      },
+      {
+        "name": "Nihari Masala",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 238
+      },
+      {
+        "name": "Korma Masala",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 285
+      },
+      {
+        "name": "Tikka Masala",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 317
+      },
+      {
+        "name": "Tandoori Masala",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 317
+      },
+      {
+        "name": "Haleem Masala",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 285
+      },
+      {
+        "name": "Seekh Kabab Masala",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 333
+      },
+      {
+        "name": "Shami Kabab Masala",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 285
+      },
+      {
+        "name": "Chapli Kabab Masala",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 150
+      },
+      {
+        "name": "Kofta Masala",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 300
+      },
+      {
+        "name": "Paya Masala",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 285
+      },
+      {
+        "name": "Dal Masala",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 150
+      },
+      {
+        "name": "Keema Masala",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 300
+      },
+      {
+        "name": "Pulao Masala",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 300
+      },
+      {
+        "name": "Achar Gosht Masala",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 285
+      },
+      {
+        "name": "Butter Chicken Masala",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 300
+      },
+      {
+        "name": "Fish Masala",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 375
+      },
+      {
+        "name": "Chicken Jalfrezi Masala",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 300
+      },
+      {
+        "name": "Chicken Handi Masala",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 300
+      },
+      {
+        "name": "Haleem Mix (Complete)",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 123
+      },
+      {
+        "name": "Potato",
+        "category": "vegetables",
+        "unit": "100g",
+        "price_per_unit": 12
+      },
+      {
+        "name": "Tomato",
+        "category": "vegetables",
+        "unit": "100g",
+        "price_per_unit": 24
+      },
+      {
+        "name": "Onion",
+        "category": "vegetables",
+        "unit": "100g",
+        "price_per_unit": 24
+      },
+      {
+        "name": "Garlic",
+        "category": "vegetables",
+        "unit": "100g",
+        "price_per_unit": 38
+      },
+      {
+        "name": "Ginger",
+        "category": "vegetables",
+        "unit": "100g",
+        "price_per_unit": 30
+      },
+      {
+        "name": "Green Chilli",
+        "category": "vegetables",
+        "unit": "100g",
+        "price_per_unit": 32
+      },
+      {
+        "name": "Capsicum (Green)",
+        "category": "vegetables",
+        "unit": "100g",
+        "price_per_unit": 44
+      },
+      {
+        "name": "Red Capsicum",
+        "category": "vegetables",
+        "unit": "100g",
+        "price_per_unit": 240
+      },
+      {
+        "name": "Yellow Capsicum",
+        "category": "vegetables",
+        "unit": "100g",
+        "price_per_unit": 240
+      },
+      {
+        "name": "Cucumber",
+        "category": "vegetables",
+        "unit": "100g",
+        "price_per_unit": 20
+      },
+      {
+        "name": "Carrot",
+        "category": "vegetables",
+        "unit": "100g",
+        "price_per_unit": 46
+      },
+      {
+        "name": "Cabbage",
+        "category": "vegetables",
+        "unit": "100g",
+        "price_per_unit": 26
+      },
+      {
+        "name": "Cauliflower",
+        "category": "vegetables",
+        "unit": "100g",
+        "price_per_unit": 12
+      },
+      {
+        "name": "Spinach",
+        "category": "vegetables",
+        "unit": "100g",
+        "price_per_unit": 14
+      },
+      {
+        "name": "Fresh Coriander",
+        "category": "vegetables",
+        "unit": "100g",
+        "price_per_unit": 50
+      },
+      {
+        "name": "Fresh Mint",
+        "category": "vegetables",
+        "unit": "100g",
+        "price_per_unit": 50
+      },
+      {
+        "name": "Fresh Peas",
+        "category": "vegetables",
+        "unit": "100g",
+        "price_per_unit": 30
+      },
+      {
+        "name": "Lady Finger (Bhindi)",
+        "category": "vegetables",
+        "unit": "100g",
+        "price_per_unit": 60
+      },
+      {
+        "name": "Bitter Gourd (Karela)",
+        "category": "vegetables",
+        "unit": "100g",
+        "price_per_unit": 24
+      },
+      {
+        "name": "Aubergine (Baingan)",
+        "category": "vegetables",
+        "unit": "100g",
+        "price_per_unit": 16
+      },
+      {
+        "name": "Turnip (Shalgam)",
+        "category": "vegetables",
+        "unit": "100g",
+        "price_per_unit": 18
+      },
+      {
+        "name": "Fresh Fenugreek (Methi)",
+        "category": "vegetables",
+        "unit": "100g",
+        "price_per_unit": 16
+      },
+      {
+        "name": "Round Gourd (Tinda)",
+        "category": "vegetables",
+        "unit": "100g",
+        "price_per_unit": 16
+      },
+      {
+        "name": "Bottle Gourd (Kaddu)",
+        "category": "vegetables",
+        "unit": "100g",
+        "price_per_unit": 22
+      },
+      {
+        "name": "Sponge Gourd (Tori)",
+        "category": "vegetables",
+        "unit": "100g",
+        "price_per_unit": 25
+      },
+      {
+        "name": "Beetroot",
+        "category": "vegetables",
+        "unit": "100g",
+        "price_per_unit": 50
+      },
+      {
+        "name": "Yam (Arvi)",
+        "category": "vegetables",
+        "unit": "100g",
+        "price_per_unit": 36
+      },
+      {
+        "name": "French Beans (Moongray)",
+        "category": "vegetables",
+        "unit": "100g",
+        "price_per_unit": 64
+      },
+      {
+        "name": "Banana",
+        "category": "fruit",
+        "unit": "100g",
+        "price_per_unit": 29
+      },
+      {
+        "name": "Red Apple",
+        "category": "fruit",
+        "unit": "100g",
+        "price_per_unit": 55
+      },
+      {
+        "name": "Green Apple",
+        "category": "fruit",
+        "unit": "100g",
+        "price_per_unit": 35
+      },
+      {
+        "name": "Orange",
+        "category": "fruit",
+        "unit": "100g",
+        "price_per_unit": 45
+      },
+      {
+        "name": "Kinnow",
+        "category": "fruit",
+        "unit": "100g",
+        "price_per_unit": 50
+      },
+      {
+        "name": "Lemon",
+        "category": "fruit",
+        "unit": "100g",
+        "price_per_unit": 32
+      },
+      {
+        "name": "Guava",
+        "category": "fruit",
+        "unit": "100g",
+        "price_per_unit": 30
+      },
+      {
+        "name": "Mango (Dusehri)",
+        "category": "fruit",
+        "unit": "100g",
+        "price_per_unit": 56
+      },
+      {
+        "name": "Mango (Chaunsa)",
+        "category": "fruit",
+        "unit": "100g",
+        "price_per_unit": 55
+      },
+      {
+        "name": "Mango (Sindhri)",
+        "category": "fruit",
+        "unit": "100g",
+        "price_per_unit": 60
+      },
+      {
+        "name": "Papaya",
+        "category": "fruit",
+        "unit": "100g",
+        "price_per_unit": 55
+      },
+      {
+        "name": "Watermelon",
+        "category": "fruit",
+        "unit": "100g",
+        "price_per_unit": 30
+      },
+      {
+        "name": "Cantaloupe (Garma)",
+        "category": "fruit",
+        "unit": "100g",
+        "price_per_unit": 40
+      },
+      {
+        "name": "Musk Melon (Sharbooz)",
+        "category": "fruit",
+        "unit": "100g",
+        "price_per_unit": 30
+      },
+      {
+        "name": "Pear",
+        "category": "fruit",
+        "unit": "100g",
+        "price_per_unit": 60
+      },
+      {
+        "name": "Peach",
+        "category": "fruit",
+        "unit": "100g",
+        "price_per_unit": 50
+      },
+      {
+        "name": "Fresh Apricot",
+        "category": "fruit",
+        "unit": "100g",
+        "price_per_unit": 90
+      },
+      {
+        "name": "Cherry",
+        "category": "fruit",
+        "unit": "100g",
+        "price_per_unit": 208
+      },
+      {
+        "name": "Grapes",
+        "category": "fruit",
+        "unit": "100g",
+        "price_per_unit": 100
+      },
+      {
+        "name": "Pomegranate",
+        "category": "fruit",
+        "unit": "100g",
+        "price_per_unit": 120
+      },
+      {
+        "name": "Strawberry",
+        "category": "fruit",
+        "unit": "100g",
+        "price_per_unit": 300
+      },
+      {
+        "name": "Jamun",
+        "category": "fruit",
+        "unit": "100g",
+        "price_per_unit": 76
+      },
+      {
+        "name": "Pineapple",
+        "category": "fruit",
+        "unit": "100g",
+        "price_per_unit": 225
+      },
+      {
+        "name": "Avocado",
+        "category": "fruit",
+        "unit": "100g",
+        "price_per_unit": 695
+      },
+      {
+        "name": "Blueberry (Imported)",
+        "category": "fruit",
+        "unit": "100g",
+        "price_per_unit": 1992
+      },
+      {
+        "name": "Beef Boti (With Bones)",
+        "category": "meat",
+        "unit": "100g",
+        "price_per_unit": 160
+      },
+      {
+        "name": "Mutton Boti (With Bones)",
+        "category": "meat",
+        "unit": "100g",
+        "price_per_unit": 270
+      },
+      {
+        "name": "Boneless Mutton",
+        "category": "meat",
+        "unit": "100g",
+        "price_per_unit": 395
+      },
+      {
+        "name": "Boneless Beef",
+        "category": "meat",
+        "unit": "100g",
+        "price_per_unit": 185
+      },
+      {
+        "name": "Fresh Chicken (Cut)",
+        "category": "meat",
+        "unit": "100g",
+        "price_per_unit": 121
+      },
+      {
+        "name": "Mayonnaise",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 66
+      },
+      {
+        "name": "Garlic Mayo Sauce",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 61
+      },
+      {
+        "name": "Spicy Garlic Mayo",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 112
+      },
+      {
+        "name": "Chipotle Mayo",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 109
+      },
+      {
+        "name": "Sriracha Mayo",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 124
+      },
+      {
+        "name": "Chilli Mayo",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 118
+      },
+      {
+        "name": "Sandwich Spread",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 55
+      },
+      {
+        "name": "Mayo Ketchup (Mayo Chup)",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 46
+      },
+      {
+        "name": "Chicken Spread (Plain)",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 134
+      },
+      {
+        "name": "Chicken BBQ Spread",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 148
+      },
+      {
+        "name": "Chicken Fajita Spread",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 148
+      },
+      {
+        "name": "Tomato Ketchup",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 55
+      },
+      {
+        "name": "Chilli Garlic Sauce",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 55
+      },
+      {
+        "name": "Green Chilli Sauce",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 55
+      },
+      {
+        "name": "Chinese Chilli Sauce",
+        "category": "condiments",
+        "unit": "100ml",
+        "price_per_unit": 66
+      },
+      {
+        "name": "Soy Sauce",
+        "category": "condiments",
+        "unit": "100ml",
+        "price_per_unit": 48
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "category": "condiments",
+        "unit": "100ml",
+        "price_per_unit": 160
+      },
+      {
+        "name": "BBQ Sauce",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 65
+      },
+      {
+        "name": "Sriracha Sauce",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 90
+      },
+      {
+        "name": "Pizza Sauce",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 94
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "category": "condiments",
+        "unit": "100ml",
+        "price_per_unit": 39
+      },
+      {
+        "name": "Chilli Sauce",
+        "category": "condiments",
+        "unit": "100ml",
+        "price_per_unit": 53
+      },
+      {
+        "name": "Peri Peri Sauce",
+        "category": "condiments",
+        "unit": "100ml",
+        "price_per_unit": 157
+      },
+      {
+        "name": "Peri Peri Garlic Sauce",
+        "category": "condiments",
+        "unit": "100ml",
+        "price_per_unit": 153
+      },
+      {
+        "name": "Mustard Sauce",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 282
+      },
+      {
+        "name": "Tabasco Sauce",
+        "category": "condiments",
+        "unit": "100ml",
+        "price_per_unit": 383
+      },
+      {
+        "name": "Chipotle Sauce",
+        "category": "condiments",
+        "unit": "100ml",
+        "price_per_unit": 383
+      },
+      {
+        "name": "Lemon Juice (Bottled)",
+        "category": "condiments",
+        "unit": "100ml",
+        "price_per_unit": 77
+      },
+      {
+        "name": "Imli Ginger Sauce",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 55
+      },
+      {
+        "name": "Synthetic Vinegar",
+        "category": "condiments",
+        "unit": "100ml",
+        "price_per_unit": 25
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "category": "condiments",
+        "unit": "100ml",
+        "price_per_unit": 80
+      },
+      {
+        "name": "Tamarind Chutney",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 120
+      },
+      {
+        "name": "Mango Chutney",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 93
+      },
+      {
+        "name": "Plum Chutney",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 116
+      },
+      {
+        "name": "Mixed Pickle",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 98
+      },
+      {
+        "name": "Mango Pickle",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 108
+      },
+      {
+        "name": "Lemon Pickle",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 113
+      },
+      {
+        "name": "Chilli Pickle",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 113
+      },
+      {
+        "name": "Carrot Pickle",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 173
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 190
+      },
+      {
+        "name": "Garlic Paste",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 200
+      },
+      {
+        "name": "Ginger Paste",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 206
+      },
+      {
+        "name": "Chicken Corn Soup Mix",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 290
+      },
+      {
+        "name": "Chicken Vegetable Soup Mix",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 358
+      },
+      {
+        "name": "Hot and Sour Soup Mix",
+        "category": "condiments",
+        "unit": "100g",
+        "price_per_unit": 339
+      },
+      {
+        "name": "Elbow Macaroni",
+        "category": "grains",
+        "unit": "100g",
+        "price_per_unit": 48
+      },
+      {
+        "name": "Shell Pasta",
+        "category": "grains",
+        "unit": "100g",
+        "price_per_unit": 50
+      },
+      {
+        "name": "Penne",
+        "category": "grains",
+        "unit": "100g",
+        "price_per_unit": 50
+      },
+      {
+        "name": "Spiral Pasta",
+        "category": "grains",
+        "unit": "100g",
+        "price_per_unit": 50
+      },
+      {
+        "name": "Spaghetti",
+        "category": "grains",
+        "unit": "100g",
+        "price_per_unit": 51
+      },
+      {
+        "name": "Lasagne Sheets",
+        "category": "grains",
+        "unit": "100g",
+        "price_per_unit": 108
+      },
+      {
+        "name": "Flavored Macaroni (Tikka)",
+        "category": "grains",
+        "unit": "100g",
+        "price_per_unit": 68
+      },
+      {
+        "name": "Vermicelli (Seviyan)",
+        "category": "grains",
+        "unit": "100g",
+        "price_per_unit": 44
+      },
+      {
+        "name": "Instant Noodles",
+        "category": "grains",
+        "unit": "100g",
+        "price_per_unit": 100
+      },
+      {
+        "name": "Egg Noodles",
+        "category": "grains",
+        "unit": "100g",
+        "price_per_unit": 88
+      },
+      {
+        "name": "Kheer Mix",
+        "category": "baking",
+        "unit": "100g",
+        "price_per_unit": 98
+      },
+      {
+        "name": "Firni Mix",
+        "category": "baking",
+        "unit": "100g",
+        "price_per_unit": 107
+      },
+      {
+        "name": "Rasmalai Mix",
+        "category": "baking",
+        "unit": "100g",
+        "price_per_unit": 307
+      },
+      {
+        "name": "Gulab Jamun Mix",
+        "category": "baking",
+        "unit": "100g",
+        "price_per_unit": 271
+      },
+      {
+        "name": "Shahi Tukra Mix",
+        "category": "baking",
+        "unit": "100g",
+        "price_per_unit": 122
+      },
+      {
+        "name": "Falooda Mix",
+        "category": "baking",
+        "unit": "100g",
+        "price_per_unit": 98
+      },
+      {
+        "name": "Kulfa Khoya Mix",
+        "category": "baking",
+        "unit": "100g",
+        "price_per_unit": 151
+      },
+      {
+        "name": "Sheer Khurma Mix",
+        "category": "baking",
+        "unit": "100g",
+        "price_per_unit": 144
+      },
+      {
+        "name": "Jelly (Dessert)",
+        "category": "baking",
+        "unit": "100g",
+        "price_per_unit": 213
+      },
+      {
+        "name": "Ice Cream Powder",
+        "category": "baking",
+        "unit": "100g",
+        "price_per_unit": 72
+      },
+      {
+        "name": "Egg Pudding Mix",
+        "category": "baking",
+        "unit": "100g",
+        "price_per_unit": 218
+      },
+      {
+        "name": "Corn Oil",
+        "category": "oils",
+        "unit": "100ml",
+        "price_per_unit": 140
+      },
+      {
+        "name": "Cooking Oil (Vegetable)",
+        "category": "oils",
+        "unit": "100ml",
+        "price_per_unit": 59
+      },
+      {
+        "name": "Soybean Oil",
+        "category": "oils",
+        "unit": "100ml",
+        "price_per_unit": 60
+      },
+      {
+        "name": "Sunflower Oil",
+        "category": "oils",
+        "unit": "100ml",
+        "price_per_unit": 61
+      },
+      {
+        "name": "Canola Oil",
+        "category": "oils",
+        "unit": "100ml",
+        "price_per_unit": 61
+      },
+      {
+        "name": "Banaspati Ghee",
+        "category": "oils",
+        "unit": "100g",
+        "price_per_unit": 53
+      },
+      {
+        "name": "Mustard Oil",
+        "category": "oils",
+        "unit": "100ml",
+        "price_per_unit": 78
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "category": "oils",
+        "unit": "100ml",
+        "price_per_unit": 495
+      },
+      {
+        "name": "Olive Pomace Oil",
+        "category": "oils",
+        "unit": "100ml",
+        "price_per_unit": 355
+      },
+      {
+        "name": "Olive and Canola Oil Blend",
+        "category": "oils",
+        "unit": "100ml",
+        "price_per_unit": 62
+      },
+      {
+        "name": "Mulathi (Licorice Root)",
+        "category": "spices",
+        "unit": "100g",
+        "price_per_unit": 300
+      }
+    ]
+  }

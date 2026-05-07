@@ -57,7 +57,7 @@
 | # | Task | Status | Notes |
 |---|------|--------|-------|
 | 2.1 | Define and document the city JSON schema | ✅ | `meta` block + `ingredients` array per Design Doc §8.1 |
-| 2.2 | Build Islamabad, Pakistan seed dataset (`/data/pk/islamabad.json`) | ⬜ | Vegetables, grains, legumes, meat, dairy, oils, spices — all costed |
+| 2.2 | Build Islamabad, Pakistan seed dataset (`/data/pk/islamabad.json`) | ✅ | Vegetables, grains, legumes, meat, dairy, oils, spices — all costed |
 | 2.3 | Build country → city selector UI component | ⬜ | Dropdown populated dynamically from available JSON files |
 | 2.4 | Dataset loader service — fetch selected city JSON, expose to app state | ⬜ | Lives in `src/services/datasetService.js` |
 

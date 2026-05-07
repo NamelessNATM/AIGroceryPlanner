@@ -1,5 +1,14 @@
 # Changelog
 
+## [2026-05-07] — 2.2 Build Islamabad seed dataset (/data/pk/islamabad.json)
+
+**Status:** Complete
+**What changed:** Created the Islamabad, Pakistan seed dataset at data/pk/islamabad.json. The file contains 295 ingredients across 12 categories: baking (32), condiments (54), dairy (13), frozen (14), fruit (28), grains (27), legumes (14), meat (11), nuts (4), oils (13), spices (57), vegetables (28). Prices are sourced from islamabadgrocery.store and normalised to a consistent per-unit basis (100g, 100ml, 1L, dozen, loaf, or piece depending on the ingredient). Extended categories beyond the base schema to include baking, frozen, nuts, and condiments as permitted by the design doc. Replaces the data/pk/.gitkeep placeholder from task 2.1.
+**Files modified:** data/pk/islamabad.json (created), data/pk/.gitkeep (deleted), changelog.md
+**Firestore collections affected:** none
+**Test result:** Pass — valid JSON, all meta fields present, all 295 ingredients have required keys, no zero or null prices, 12 categories confirmed
+**Next task:** 2.3 Build country → city selector UI component
+
 ## [2026-05-07] — 2.1 Define and document the city JSON schema
 
 **Status:** Complete
