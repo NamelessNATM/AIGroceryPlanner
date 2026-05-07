@@ -4,6 +4,15 @@ All notable changes to **AI Grocery Planner** are documented here. This file is 
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [2026-05-07] — 2.4 Dataset loader service
+
+**Status:** Complete
+**What changed:** Created src/services/datasetService.js with a single exported function getDatasetForLocation(countryCode, citySlug) that looks up the selected city's full JSON dataset from the pre-built locationData index. Added selectedDataset state to App.jsx, driven by a useEffect that calls the service whenever locationSelection changes. selectedDataset is passed down to CountryCitySelector as a prop, ready for consumption in Phase 3. App.jsx never accesses getLocationIndex() directly for dataset lookup — all access is through the service.
+**Files modified:** src/services/datasetService.js (created), src/App.jsx (modified), changelog.md
+**Firestore collections affected:** none
+**Test result:** Pass — selectedDataset logs null on load, null on country-only selection, and the full 295-ingredient Islamabad dataset object on city selection
+**Next task:** 3.1 Build parameters panel UI — people, meal frequency, budget, exclusions, language
+
 ## [Unreleased]
 
 ### Added

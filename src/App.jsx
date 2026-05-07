@@ -1,6 +1,7 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import CountryCitySelector from "./components/CountryCitySelector.jsx";
 import { getLocationIndex } from "./services/locationData.js";
+import { getDatasetForLocation } from "./services/datasetService.js";
 
 export default function App() {
   const { countries, citiesByCountry } = useMemo(() => getLocationIndex(), []);
@@ -9,6 +10,17 @@ export default function App() {
     countryCode: null,
     citySlug: null,
   });
+
+  const [selectedDataset, setSelectedDataset] = useState(null);
+
+  useEffect(() => {
+    const { countryCode, citySlug } = locationSelection ?? {};
+    if (countryCode != null && citySlug != null) {
+      setSelectedDataset(getDatasetForLocation(countryCode, citySlug));
+    } else {
+      setSelectedDataset(null);
+    }
+  }, [locationSelection]);
 
   return (
     <div className="min-h-screen bg-gray-950 text-gray-100">
@@ -27,6 +39,7 @@ export default function App() {
           onChange={setLocationSelection}
           countries={countries}
           citiesByCountry={citiesByCountry}
+          selectedDataset={selectedDataset}
         />
       </div>
     </div>
