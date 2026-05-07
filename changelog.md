@@ -8,6 +8,7 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 
 ### Added
 
+- `WBS.md` — full work breakdown structure covering all 11 phases from project foundation through deployment and QA.
 - React (Vite) + Tailwind CSS frontend scaffold with Firebase connection
 - Country → city selector populated dynamically from community JSON datasets
 - Parameters panel — people count, meal frequency, weekly budget, dietary exclusions, language selection
