@@ -4,6 +4,49 @@ All notable changes to **AI Grocery Planner** are documented here. This file is 
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [Unreleased]
+
+### Added
+
+- `WBS.md` — full work breakdown structure covering all 11 phases from project foundation through deployment and QA.
+- Vite + React + Tailwind scaffold in `ai_grocery_planner/` with Firebase SDK wired up
+  - Firebase config loaded from Vite env (`import.meta.env`) — no secrets committed in source
+  - `src/services/firebase.js` initialises Firebase app (and exports configured clients)
+  - Firebase Hosting config updated so groceries target serves `ai_grocery_planner/dist`
+- Country → city selector populated dynamically from community JSON datasets
+- Parameters panel — people count, meal frequency, weekly budget, dietary exclusions, language selection
+- Client-side minimum viable weekly cost calculator derived from city dataset prices
+- Economies of scale logic — per-person minimum stays fixed, total budget multiplies by people count and is passed to the AI as a single figure
+- Islamabad, Pakistan seed dataset JSON (`/data/pk/islamabad.json`) including vegetables, grains, legumes, meat, dairy, oils, and spices
+- Oracle Cloud ARM instance running Ollama with Qwen3-30B-A3B (Q4_K_M, thinking mode enabled) — dedicated inference server, no other workloads
+- Thin Express auth server on Oracle instance — validates requests from Cloud Run, forwards to Ollama, rejects all other traffic
+- Google Cloud Run API layer — request queuing (max 2 concurrent), Google Translate post-processing for Urdu and Pashto, Oracle proxy
+- Result caching layer — cache key hashed from city, country, people, meals, budget, exclusions, and dataset last_updated; cache stored in Firestore; stale entries purged nightly
+- AI prompt — structured JSON output parsed and rendered by frontend; user never sees raw JSON
+- Results display — shopping list table, recipe cards, per-meal and weekly cost breakdown
+- Firestore session and meal plan persistence
+- Firestore security rules scoped to session owner
+- Google Translate integration for Urdu and Pashto output with visible language toggle on results page
+- Oracle keepalive cron job running every 6 hours to prevent idle instance reclamation
+- Firebase Hosting deployment
+
+## [2026-05-07] — WBS restructure: budget floor deferred to post-AI phase
+
+**Status:** Complete
+**What changed:** Removed tasks 3.2 (client-side minimum viable cost calculator)
+and 3.3 (budget input validation) from Phase 3. The floor value cannot be
+meaningfully computed client-side before the AI is implemented — any hardcoded
+gram or litre constants would be guesses, not data. Both tasks have been
+rewritten as Phase 6.5 (tasks 6.5.1–6.5.3), sitting after the AI response
+parser (6.3) in the dependency chain. The AI will return a
+minimum_viable_weekly_cost field as part of every response; that figure becomes
+the budget floor. The weeklyBudget field in ParametersPanel remains a free input
+until Phase 6.5 is complete. Note: the minimum viable floor must be expressed in currency (e.g. PKR 1,200 / week) — not in grams, litres, or any other physical unit. The AI calculates the cheapest sufficient basket and returns its total cost in the dataset's local currency. Physical quantities are internal to the AI's reasoning and never surfaced as the floor value.
+**Files modified:** WBS.md, changelog.md
+**Firestore collections affected:** none
+**Test result:** N/A — documentation change only
+**Next task:** 4.1 Provision Oracle Cloud Always Free ARM instance
+
 ## [2026-05-07] — 3.1 Parameters panel UI
 
 **Status:** Complete
@@ -34,32 +77,6 @@ fields update params state correctly, panel disappears on country clear
 **Firestore collections affected:** none
 **Test result:** Pass — selectedDataset logs null on load, null on country-only selection, and the full 295-ingredient Islamabad dataset object on city selection
 **Next task:** 3.1 Build parameters panel UI — people, meal frequency, budget, exclusions, language
-
-## [Unreleased]
-
-### Added
-
-- `WBS.md` — full work breakdown structure covering all 11 phases from project foundation through deployment and QA.
-- Vite + React + Tailwind scaffold in `ai_grocery_planner/` with Firebase SDK wired up
-  - Firebase config loaded from Vite env (`import.meta.env`) — no secrets committed in source
-  - `src/services/firebase.js` initialises Firebase app (and exports configured clients)
-  - Firebase Hosting config updated so groceries target serves `ai_grocery_planner/dist`
-- Country → city selector populated dynamically from community JSON datasets
-- Parameters panel — people count, meal frequency, weekly budget, dietary exclusions, language selection
-- Client-side minimum viable weekly cost calculator derived from city dataset prices
-- Economies of scale logic — per-person minimum stays fixed, total budget multiplies by people count and is passed to the AI as a single figure
-- Islamabad, Pakistan seed dataset JSON (`/data/pk/islamabad.json`) including vegetables, grains, legumes, meat, dairy, oils, and spices
-- Oracle Cloud ARM instance running Ollama with Qwen3-30B-A3B (Q4_K_M, thinking mode enabled) — dedicated inference server, no other workloads
-- Thin Express auth server on Oracle instance — validates requests from Cloud Run, forwards to Ollama, rejects all other traffic
-- Google Cloud Run API layer — request queuing (max 2 concurrent), Google Translate post-processing for Urdu and Pashto, Oracle proxy
-- Result caching layer — cache key hashed from city, country, people, meals, budget, exclusions, and dataset last_updated; cache stored in Firestore; stale entries purged nightly
-- AI prompt — structured JSON output parsed and rendered by frontend; user never sees raw JSON
-- Results display — shopping list table, recipe cards, per-meal and weekly cost breakdown
-- Firestore session and meal plan persistence
-- Firestore security rules scoped to session owner
-- Google Translate integration for Urdu and Pashto output with visible language toggle on results page
-- Oracle keepalive cron job running every 6 hours to prevent idle instance reclamation
-- Firebase Hosting deployment
 
 ## [2026-05-07] — 2.3 Build country → city selector UI component
 

@@ -67,9 +67,7 @@
 
 | # | Task | Status | Notes |
 |---|------|--------|-------|
-| 3.1 | Build parameters panel UI — people, meal frequency, budget, exclusions, language | ✅ | Three meal frequency options: bulk (1/day), 2/day, 3/day |
-| 3.2 | Client-side minimum viable weekly cost calculator | ⬜ | Cheapest sufficient quantities × people count; displayed as budget floor |
-| 3.3 | Budget input validation — enforce minimum floor, reject values below it | ⬜ | Inline error state on the budget field |
+| 3.1 | Build parameters panel UI — people, meal frequency, budget, exclusions, language | ✅ | Three meal frequency options: bulk (1/day), 2/day, 3/day. Budget field accepts any positive value until Phase 6.5 supplies the AI-derived floor. |
 
 ---
 
@@ -105,6 +103,16 @@
 | 6.1 | Design and implement AI system prompt | ⬜ | Structured JSON output; no currency mentioned; dataset prices provide implicit currency context |
 | 6.2 | Serving size calculation — scale recipe quantities to `people × meals_per_day × 7` | ⬜ | Part of prompt construction; must produce gram/ml quantities, never symbolic amounts like "1 potato" |
 | 6.3 | Parse and validate Ollama JSON response on Cloud Run | ⬜ | Strip markdown fences; validate required fields; surface errors to frontend gracefully |
+
+---
+
+## Phase 6.5 — Budget Floor (AI-derived)
+
+| # | Task | Status | Notes |
+|---|------|--------|-------|
+| 6.5.1 | Add minimum_viable_weekly_cost to AI response schema and prompt | ⬜ | AI returns the cheapest possible basket for the given city and people count as part of every response |
+| 6.5.2 | Client-side budget floor display — show AI-derived minimum in ParametersPanel | ⬜ | Reads from AI response; no hardcoded values |
+| 6.5.3 | Budget input validation — reject values below AI-derived floor | ⬜ | Inline error state on weeklyBudget field; floor sourced from last AI response for this city |
 
 ---
 
@@ -174,14 +182,14 @@
                     ├── 2.3 City selector
                     │     └── 2.4 Dataset loader
                     │           └── 3.1 Params panel
-                    │                 └── 3.2 Min cost calc
-                    │                       └── [Phase 4 + 5 must be live]
-                    │                             └── 6.1 System prompt
-                    │                                   └── 6.2 Serving size
-                    │                                         └── 6.3 Response parser
-                    │                                               ├── 7.1–7.4 Caching
-                    │                                               ├── 8.1–8.4 Results display
-                    │                                               └── 9.1–9.3 Translation
+                    │                 └── [Phase 4 + 5 must be live]
+                    │                       └── 6.1 System prompt
+                    │                             └── 6.2 Serving size
+                    │                                   └── 6.3 Response parser
+                    │                                         ├── 6.5.1–6.5.3 Budget floor (AI-derived)
+                    │                                         ├── 7.1–7.4 Caching
+                    │                                         ├── 8.1–8.4 Results display
+                    │                                         └── 9.1–9.3 Translation
                     └── 10.1–10.3 Firestore persistence (parallel to Phase 8–9)
                           └── 11.1–11.7 Deployment & QA
 

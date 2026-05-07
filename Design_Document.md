@@ -5,7 +5,7 @@
 
 ## 1. Purpose
 
-A free, open-source web tool that takes a city-specific grocery price dataset, calculates the minimum viable weekly food cost, and generates a personalised meal plan with recipes, a shopping list, and a full cost breakdown. Powered entirely by self-hosted open source AI. Zero API costs, zero hosting costs, no rate limits.
+A free, open-source web tool that takes a city-specific grocery price dataset, determines the minimum viable weekly grocery cost via AI, and generates a personalised meal plan with recipes, a shopping list, and a full cost breakdown. Powered entirely by self-hosted open source AI. Zero API costs, zero hosting costs, no rate limits.
 
 ---
 
@@ -46,7 +46,7 @@ Firebase Firestore
 ## 4. How It Works — User Flow
 
 1. User selects **country → city** from a dropdown populated by available JSON datasets
-2. App calculates and displays the **minimum viable weekly grocery cost** for that city
+2. After the first generation, the app displays the AI-derived minimum viable weekly cost for that city and people count as a budget floor
 3. User sets:
    - Number of people
    - Meal frequency (1 bulk meal/day, 2 meals, or 3 meals)
@@ -83,26 +83,16 @@ The AI is explicitly instructed never to output symbolic quantities like "1 pota
 
 ## 6. Minimum Cost Calculation and Economies of Scale
 
-The app calculates the minimum viable weekly cost entirely client-side from the dataset — taking the cheapest ingredients in sufficient quantities to sustain one person for one week, then multiplying by the number of people.
+The minimum viable weekly cost is determined by the AI, not computed client-side. When the AI generates a meal plan it also returns a minimum_viable_weekly_cost field — the cheapest possible basket it could construct for that city, people count, and meal frequency using the dataset prices. This figure is expressed in the dataset's local currency (e.g. PKR 1,200 / week for 1 person in Islamabad).
+
+**The floor is always a currency value, never a quantity.** Physical quantities (grams, litres, units) are internal to the AI's reasoning. The user and the frontend only ever see the resulting cost figure.
 
 **The per-person minimum never changes.** What changes with group size is what the total budget unlocks:
 
-- 1 person at 125 PKR/week can only buy small retail quantities of the cheapest staples
-- 6 people at 750 PKR/week have the same 125 PKR per person minimum, but the larger total unlocks bulk quantities and higher quality ingredients that a single person could not justify purchasing alone
+- 1 person at PKR 1,200 / week can only buy small retail quantities of the cheapest staples
+- 6 people at PKR 7,200 / week have the same PKR 1,200 per person minimum, but the larger total unlocks bulk quantities and higher quality ingredients that a single person could not justify purchasing alone
 
-The app computes the total, shows it to the user as the minimum floor, and the user sets their actual budget at or above that figure.
-
-That single total number is passed into the AI prompt. The AI does not need to know how the minimum was calculated or anything about economies of scale. It simply works with what the total budget unlocks from the ingredient list.
-
-**Prompt structure:**
-
-```
-Generate 7 recipes for [total_budget] or less using the ingredient
-dataset provided. This is for [n] people. 7 recipes total, one per
-day, not exceeding [total_budget] combined.
-```
-
-No currency is mentioned in the prompt. The dataset already has all prices in the local currency so there is no ambiguity.
+The AI-derived floor is stored alongside the meal plan result. On subsequent visits the app surfaces it as the minimum for the weeklyBudget input field (Phase 6.5). Until Phase 6.5 is complete the budget field accepts any positive value.
 
 ---
 
@@ -349,7 +339,7 @@ Cached results are stored in Firestore under a dedicated collection:
 | 2 | Build Islamabad seed dataset JSON | ⬜ Not started |
 | 3 | Build country → city selector, load dataset | ⬜ Not started |
 | 4 | Build parameters panel (people, meals, budget, exclusions, language) | ⬜ Not started |
-| 5 | Client-side minimum cost calculator | ⬜ Not started |
+| 5 | AI-derived minimum viable cost (Phase 6.5) — minimum_viable_weekly_cost returned by AI, stored, and used as budget floor | ⬜ Not started |
 | 6 | Provision Oracle Cloud ARM instance, install Ollama, pull Qwen3-30B-A3B | ⬜ Not started |
 | 7 | Build Express auth + queue server on Oracle instance | ⬜ Not started |
 | 8 | Build Cloud Run API layer — queuing, translation, Oracle proxy | ⬜ Not started |
