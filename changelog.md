@@ -1,24 +1,5 @@
 # Changelog
 
-## [2026-05-07] — 2.2 Build Islamabad seed dataset (/data/pk/islamabad.json)
-
-**Status:** Complete
-**What changed:** Created the Islamabad, Pakistan seed dataset at data/pk/islamabad.json. The file contains 295 ingredients across 12 categories: baking (32), condiments (54), dairy (13), frozen (14), fruit (28), grains (27), legumes (14), meat (11), nuts (4), oils (13), spices (57), vegetables (28). Prices are sourced from islamabadgrocery.store and normalised to a consistent per-unit basis (100g, 100ml, 1L, dozen, loaf, or piece depending on the ingredient). Extended categories beyond the base schema to include baking, frozen, nuts, and condiments as permitted by the design doc. Replaces the data/pk/.gitkeep placeholder from task 2.1.
-**Files modified:** data/pk/islamabad.json (created), data/pk/.gitkeep (deleted), changelog.md
-**Firestore collections affected:** none
-**Test result:** Pass — valid JSON, all meta fields present, all 295 ingredients have required keys, no zero or null prices, 12 categories confirmed
-**Next task:** 2.3 Build country → city selector UI component
-
-## [2026-05-07] — 2.1 Define and document the city JSON schema
-
-**Status:** Complete
-**What changed:** Created the /data/ folder structure and a SCHEMA.md file documenting the city dataset format that contributors must follow. The schema defines the meta block (country, city, currency, currency_symbol, last_updated, contributor) and the ingredients array (name, category, unit, price_per_unit). Created /data/pk/ with a .gitkeep to track the folder in Git ahead of the Islamabad seed dataset in task 2.2.
-**Files modified:** data/SCHEMA.md (created), data/pk/.gitkeep (created), changelog.md
-**Firestore collections affected:** none
-**Test result:** Pass — folder structure confirmed, SCHEMA.md created with correct content
-**Next task:** 2.2 Build Islamabad seed dataset (/data/pk/islamabad.json)
-
-
 All notable changes to **AI Grocery Planner** are documented here. This file is mirrored from the StreamFuse monorepo folder `ai_grocery_planner/` to the public repository.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
@@ -48,6 +29,33 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 - Google Translate integration for Urdu and Pashto output with visible language toggle on results page
 - Oracle keepalive cron job running every 6 hours to prevent idle instance reclamation
 - Firebase Hosting deployment
+
+## [2026-05-07] — 2.3 Build country → city selector UI component
+
+**Status:** Complete  
+**What changed:** Created a controlled CountryCitySelector component that renders two dropdowns — country first, then city (disabled until a country is chosen). City options populate only for the selected country. Component is driven by locationSelection state in App.jsx ({ countryCode, citySlug }). Selecting a new country resets citySlug to null. Data discovery uses Vite's import.meta.glob over data/**/*.json at build time — no filesystem reads at runtime. Path parsing extracts countryCode from the folder name and citySlug from the filename. Labels prefer json.meta.country and json.meta.city, falling back to uppercased code and title-cased slug. Index is built in src/services/locationData.js and exported via getLocationIndex(). Note: cityDataByKey was exported by Cursor despite the scope amendment — it is harmless but will be formally adopted in task 2.4.  
+**Files modified:** src/components/CountryCitySelector.jsx (created), src/services/locationData.js (created), src/App.jsx (modified), changelog.md  
+**Firestore collections affected:** none  
+**Test result:** Pass — country dropdown renders, city dropdown enables on country select, Islamabad appears under Pakistan, no app errors in console  
+**Next task:** 2.4 Dataset loader service — fetch selected city JSON, expose to app state
+
+## [2026-05-07] — 2.2 Build Islamabad seed dataset (/data/pk/islamabad.json)
+
+**Status:** Complete
+**What changed:** Created the Islamabad, Pakistan seed dataset at data/pk/islamabad.json. The file contains 295 ingredients across 12 categories: baking (32), condiments (54), dairy (13), frozen (14), fruit (28), grains (27), legumes (14), meat (11), nuts (4), oils (13), spices (57), vegetables (28). Prices are sourced from islamabadgrocery.store and normalised to a consistent per-unit basis (100g, 100ml, 1L, dozen, loaf, or piece depending on the ingredient). Extended categories beyond the base schema to include baking, frozen, nuts, and condiments as permitted by the design doc. Replaces the data/pk/.gitkeep placeholder from task 2.1.
+**Files modified:** data/pk/islamabad.json (created), data/pk/.gitkeep (deleted), changelog.md
+**Firestore collections affected:** none
+**Test result:** Pass — valid JSON, all meta fields present, all 295 ingredients have required keys, no zero or null prices, 12 categories confirmed
+**Next task:** 2.3 Build country → city selector UI component
+
+## [2026-05-07] — 2.1 Define and document the city JSON schema
+
+**Status:** Complete
+**What changed:** Created the /data/ folder structure and a SCHEMA.md file documenting the city dataset format that contributors must follow. The schema defines the meta block (country, city, currency, currency_symbol, last_updated, contributor) and the ingredients array (name, category, unit, price_per_unit). Created /data/pk/ with a .gitkeep to track the folder in Git ahead of the Islamabad seed dataset in task 2.2.
+**Files modified:** data/SCHEMA.md (created), data/pk/.gitkeep (created), changelog.md
+**Firestore collections affected:** none
+**Test result:** Pass — folder structure confirmed, SCHEMA.md created with correct content
+**Next task:** 2.2 Build Islamabad seed dataset (/data/pk/islamabad.json)
 
 ## [0.1.0] — 2026-05-07
 
