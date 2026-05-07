@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import CountryCitySelector from "./components/CountryCitySelector.jsx";
+import ParametersPanel from "./components/ParametersPanel/ParametersPanel.jsx";
 import { getLocationIndex } from "./services/locationData.js";
 import { getDatasetForLocation } from "./services/datasetService.js";
 
@@ -12,6 +13,14 @@ export default function App() {
   });
 
   const [selectedDataset, setSelectedDataset] = useState(null);
+
+  const [params, setParams] = useState({
+    peopleCount: 1,
+    mealFrequency: "2_meals",
+    weeklyBudget: "",
+    dietaryExclusions: "",
+    language: "en",
+  });
 
   useEffect(() => {
     const { countryCode, citySlug } = locationSelection ?? {};
@@ -41,6 +50,10 @@ export default function App() {
           citiesByCountry={citiesByCountry}
           selectedDataset={selectedDataset}
         />
+
+        {selectedDataset != null ? (
+          <ParametersPanel value={params} onChange={setParams} />
+        ) : null}
       </div>
     </div>
   );

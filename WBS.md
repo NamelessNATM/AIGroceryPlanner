@@ -67,7 +67,7 @@
 
 | # | Task | Status | Notes |
 |---|------|--------|-------|
-| 3.1 | Build parameters panel UI — people, meal frequency, budget, exclusions, language | ⬜ | Three meal frequency options: bulk (1/day), 2/day, 3/day |
+| 3.1 | Build parameters panel UI — people, meal frequency, budget, exclusions, language | ✅ | Three meal frequency options: bulk (1/day), 2/day, 3/day |
 | 3.2 | Client-side minimum viable weekly cost calculator | ⬜ | Cheapest sufficient quantities × people count; displayed as budget floor |
 | 3.3 | Budget input validation — enforce minimum floor, reject values below it | ⬜ | Inline error state on the budget field |
 

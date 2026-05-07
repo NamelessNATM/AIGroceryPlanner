@@ -4,6 +4,28 @@ All notable changes to **AI Grocery Planner** are documented here. This file is 
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [2026-05-07] — 3.1 Parameters panel UI
+
+**Status:** Complete
+**What changed:** Created src/components/ParametersPanel/ParametersPanel.jsx and
+src/components/ParametersPanel/OptionGroup.jsx. ParametersPanel is a fully
+controlled component with five fields: people count (number input, min 1),
+meal frequency (radio group: 1_bulk / 2_meals / 3_meals), weekly budget
+(number input, validation deferred to 3.2–3.3), dietary exclusions (free text),
+and language (radio group: en / ur / ps). Panel is gated in App.jsx on
+selectedDataset !== null — invisible until a city is selected, disappears if
+selection is cleared. params state added to App.jsx with shape
+{ peopleCount, mealFrequency, weeklyBudget, dietaryExclusions, language };
+lifted via value/onChange. ParametersPanel.jsx split from OptionGroup.jsx to
+stay within the 100-line limit.
+**Files modified:** src/components/ParametersPanel/ParametersPanel.jsx (created),
+src/components/ParametersPanel/OptionGroup.jsx (created), src/App.jsx (modified),
+changelog.md
+**Firestore collections affected:** none
+**Test result:** Pass — panel hidden on load, appears on city select, all five
+fields update params state correctly, panel disappears on country clear
+**Next task:** 3.2 Client-side minimum viable weekly cost calculator
+
 ## [2026-05-07] — 2.4 Dataset loader service
 
 **Status:** Complete
