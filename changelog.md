@@ -8,7 +8,23 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 
 ### Added
 
-- Placeholder for upcoming features.
+- React (Vite) + Tailwind CSS frontend scaffold with Firebase connection
+- Country → city selector populated dynamically from community JSON datasets
+- Parameters panel — people count, meal frequency, weekly budget, dietary exclusions, language selection
+- Client-side minimum viable weekly cost calculator derived from city dataset prices
+- Economies of scale logic — per-person minimum stays fixed, total budget multiplies by people count and is passed to the AI as a single figure
+- Islamabad, Pakistan seed dataset JSON (`/data/pk/islamabad.json`) including vegetables, grains, legumes, meat, dairy, oils, and spices
+- Oracle Cloud ARM instance running Ollama with Qwen3-30B-A3B (Q4_K_M, thinking mode enabled) — dedicated inference server, no other workloads
+- Thin Express auth server on Oracle instance — validates requests from Cloud Run, forwards to Ollama, rejects all other traffic
+- Google Cloud Run API layer — request queuing (max 2 concurrent), Google Translate post-processing for Urdu and Pashto, Oracle proxy
+- Result caching layer — cache key hashed from city, country, people, meals, budget, exclusions, and dataset last_updated; cache stored in Firestore; stale entries purged nightly
+- AI prompt — structured JSON output parsed and rendered by frontend; user never sees raw JSON
+- Results display — shopping list table, recipe cards, per-meal and weekly cost breakdown
+- Firestore session and meal plan persistence
+- Firestore security rules scoped to session owner
+- Google Translate integration for Urdu and Pashto output with visible language toggle on results page
+- Oracle keepalive cron job running every 6 hours to prevent idle instance reclamation
+- Firebase Hosting deployment
 
 ## [0.1.0] — 2026-05-07
 
