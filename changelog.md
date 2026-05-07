@@ -1,5 +1,15 @@
 # Changelog
 
+## [2026-05-07] — 2.1 Define and document the city JSON schema
+
+**Status:** Complete
+**What changed:** Created the /data/ folder structure and a SCHEMA.md file documenting the city dataset format that contributors must follow. The schema defines the meta block (country, city, currency, currency_symbol, last_updated, contributor) and the ingredients array (name, category, unit, price_per_unit). Created /data/pk/ with a .gitkeep to track the folder in Git ahead of the Islamabad seed dataset in task 2.2.
+**Files modified:** data/SCHEMA.md (created), data/pk/.gitkeep (created), changelog.md
+**Firestore collections affected:** none
+**Test result:** Pass — folder structure confirmed, SCHEMA.md created with correct content
+**Next task:** 2.2 Build Islamabad seed dataset (/data/pk/islamabad.json)
+
+
 All notable changes to **AI Grocery Planner** are documented here. This file is mirrored from the StreamFuse monorepo folder `ai_grocery_planner/` to the public repository.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
