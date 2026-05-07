@@ -39,3 +39,12 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 - `.gitignore` for Firebase debug logs, `.env`, and common build artifacts.
 
 After you tag releases on GitHub, you can add comparison links at the bottom per [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
+
+## [2026-05-07] — Phase 1.4: .env.example
+
+**Status:** Complete
+**What changed:** Created .env.example documenting all environment variables required by the project. Covers all seven Firebase config vars currently used in firebase.js, plus VITE_CLOUD_RUN_URL (Phase 3 Cloud Run proxy) and VITE_GOOGLE_TRANSLATE_API_KEY (Phase 7 translation). Each var includes a comment explaining where to find it.
+**Files modified:** .env.example (created), WBS.md
+**Firestore collections affected:** none
+**Test result:** Pass — file present, all vars documented, .env.example confirmed not in .gitignore exclusion (it should be committed; .env should not)
+**Next task:** Phase 1.5 — Anonymous Firebase Auth session on app load

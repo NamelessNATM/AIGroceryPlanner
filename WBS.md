@@ -48,7 +48,7 @@
 | 1.1 | Scaffold Vite + React + Tailwind CSS project | ✅ | Replaces static `index.html` as the app entry point |
 | 1.2 | Connect Firebase — initialise app, Firestore, and Auth config | ✅ | Config from `.env`; no hardcoded keys |
 | 1.3 | Anonymous Firebase Auth session on app load | 🚫 | Cut — app is a free public tool with no sensitive data; Firestore will use open rules instead of per-user scoping |
-| 1.4 | `.env.example` documenting all required env vars | ⬜ | `VITE_CLOUD_RUN_URL`, `VITE_FIREBASE_*`, `VITE_GOOGLE_TRANSLATE_API_KEY` |
+| 1.4 | `.env.example` documenting all required env vars | ✅ | `VITE_CLOUD_RUN_URL`, `VITE_FIREBASE_*`, `VITE_GOOGLE_TRANSLATE_API_KEY` |
 
 ---
 
